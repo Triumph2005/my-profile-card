@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+</head>
+<body>
+    <h2>My profile card</h2>
+    
+<div class="card">
+  <img src="WhatsApp Image 2025-08-19 at 9.17.25 PM.jpeg" alt="Profile">
+  <h2>Cornerstone Triumph</h2>
+  <p>Aspiring E-commerce Founder | Maduka University</p>
+  <button onclick="confirmFollow()">Follow</button>
+</div>
+
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: azure;
+        font-family: Arial, Helvetica, sans-serif;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        background-color: white;
+        border-radius: 10px;
+    }
+    img{
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+        object-fit: cover;
+        border: 4px solid black;
+    }
+    h2{
+        color: black;
+        font-weight: 600;
+        font-size: 20px;
+        margin: 20px 0 10px 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    p{
+        color: grey;
+        font-size: 16px;
+        margin-top: 15px;
+        padding: 0 20px 20px;
+    }
+    button{
+        display: inline-block;
+        width: 80%;
+        height: 40px;
+        margin-bottom: 15px;
+        border-radius: 20px;
+        border: none;
+        color: wheat;
+        background-color: black;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    button:hover{
+        cursor: pointer;
+        background-color: grey;
+        color: black;
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+    }
+    button:active{
+        transform: scale(0.95);
+    }
+</style>
+
+<script>
+function confirmFollow() {
+    let userChoice = confirm("Do you want to continue?");
+    if (userChoice) {
+        alert("✅ You chose to continue!");
+    } else {
+        alert("❌ You cancelled.");
+    }
+}
+</script>
+
+</body>
+</html>
+  
